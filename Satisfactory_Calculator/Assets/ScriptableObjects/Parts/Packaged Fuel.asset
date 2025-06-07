@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Packaged Fuel
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 4e4dd50ad148808b0bac35b49059bd83, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 9007848131288742097, guid: 59fd4cd75165390f5a834be4e0294df8, type: 3}
+    productionPerMinute: 40
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 8602898ddc44e922790ba7e0a50c5d66, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 95282f646a06a05eb8149027fb8423c6, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []
+  producer:
+    icon: {fileID: 0}
+    production: 0
