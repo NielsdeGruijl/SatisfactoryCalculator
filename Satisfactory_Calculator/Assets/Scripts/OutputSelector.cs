@@ -12,9 +12,14 @@ public class OutputSelector : MonoBehaviour
 
     private PartsList partsList;
 
+    private List<Part> sortedPartsList;
+    
     private void Start()
     {
         partsList = GetComponent<PartsList>();
+
+        sortedPartsList = new List<Part>(partsList.parts);
+        
         outputSelectorMenu.gameObject.SetActive(false);
         GenerateOutputMenu();
     }
@@ -27,6 +32,11 @@ public class OutputSelector : MonoBehaviour
             outputMenuItem.SetPart(part);
             outputMenuItem.outputSelector = this;
         }
+    }
+
+    private void SortParts()
+    {
+        
     }
     
     public void SelectOutputPart(Part part)

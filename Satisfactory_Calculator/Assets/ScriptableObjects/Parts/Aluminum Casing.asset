@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Aluminum Casing
   m_EditorClassIdentifier: 
-  icon: {fileID: 1259301895866798925, guid: 3e3b25b97dfad95dbb5f11969136acae, type: 3}
+  icon: {fileID: 21300000, guid: 3e3b25b97dfad95dbb5f11969136acae, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -27,10 +27,13 @@ MonoBehaviour:
   activeRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 0}
-    productionPerMinute: 0
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionPerMinute: 60
     active: 0
-    partIngredients: []
+    partIngredients:
+    - part: {fileID: 11400000, guid: fe504b20b2467148aa364dad802849c4, type: 2}
+      amount: 1.5
+      productionNode: {fileID: 0}
     materialIngredients: []
   producer:
     icon: {fileID: 0}

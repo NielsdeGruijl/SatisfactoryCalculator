@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Compacted Coal
   m_EditorClassIdentifier: 
-  icon: {fileID: 2461231608163577205, guid: 619c6b47a561d863ca3d820ef4d850fc, type: 3}
+  icon: {fileID: 21300000, guid: 619c6b47a561d863ca3d820ef4d850fc, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -28,11 +28,15 @@ MonoBehaviour:
   activeRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 0}
-    productionPerMinute: 0
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 25
     active: 0
     partIngredients: []
-    materialIngredients: []
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 33eb5fe31638016299a6523d782b226c, type: 2}
+      amount: 1
+    - material: {fileID: 11400000, guid: f37fe6671a3043b85b3d2ee4f6f99e2b, type: 2}
+      amount: 1
   producer:
     icon: {fileID: 0}
     production: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Alumina Solution
   m_EditorClassIdentifier: 
-  icon: {fileID: -2444050602471243858, guid: 2da9d2bd497644e07b76ea5cec847bff, type: 3}
+  icon: {fileID: 21300000, guid: 2da9d2bd497644e07b76ea5cec847bff, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -28,11 +28,15 @@ MonoBehaviour:
   activeRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 0}
-    productionPerMinute: 0
+    productionIcon: {fileID: 21300000, guid: 1b0383a7e1d662996b27c15d9fb63a1c, type: 3}
+    productionPerMinute: 120
     active: 0
     partIngredients: []
-    materialIngredients: []
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 43c234b39e7615319888666403b45cbd, type: 2}
+      amount: 1
+    - material: {fileID: 11400000, guid: 8ffce09876ba67836b12e0b6b156b342, type: 2}
+      amount: 1.5
   producer:
     icon: {fileID: 0}
     production: 0

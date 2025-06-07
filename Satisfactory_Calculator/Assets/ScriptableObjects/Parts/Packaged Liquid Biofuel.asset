@@ -16,7 +16,7 @@ MonoBehaviour:
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 21300000, guid: 20c9f667eb6dbba839b886f5a2e2ffbb, type: 3}
+    productionIcon: {fileID: 21300000, guid: 59fd4cd75165390f5a834be4e0294df8, type: 3}
     productionPerMinute: 40
     active: 0
     partIngredients:
