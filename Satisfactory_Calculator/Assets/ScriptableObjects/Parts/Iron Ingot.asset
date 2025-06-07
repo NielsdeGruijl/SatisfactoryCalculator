@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Iron Ingot
   m_EditorClassIdentifier: 
-  icon: {fileID: -6752202015829249346, guid: 86af35625ff8e7f2c944c5b70cdd17fa, type: 3}
+  icon: {fileID: 21300000, guid: 86af35625ff8e7f2c944c5b70cdd17fa, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: -1554214871758326463, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
+    productionIcon: {fileID: 21300000, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
     productionPerMinute: 30
     active: 0
     partIngredients: []

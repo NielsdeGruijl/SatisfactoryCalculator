@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Crystal Oscillator
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 31d4820f2cd8c38dea1025fc11d09b5b, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 1
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 81694d4f9c5617d3c91f8a80049ce31e, type: 2}
+      amount: 18
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: c4b6264893df06060b46425ec9b143e8, type: 2}
+      amount: 14
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: b1c6f6f2a58e324319ddbc11bcc82eb7, type: 2}
+      amount: 2.5
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: -1194051313610047306, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 1
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 81694d4f9c5617d3c91f8a80049ce31e, type: 2}
+      amount: 18
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: c4b6264893df06060b46425ec9b143e8, type: 2}
+      amount: 14
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: b1c6f6f2a58e324319ddbc11bcc82eb7, type: 2}
+      amount: 2.5
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  producer:
+    icon: {fileID: 0}
+    production: 0

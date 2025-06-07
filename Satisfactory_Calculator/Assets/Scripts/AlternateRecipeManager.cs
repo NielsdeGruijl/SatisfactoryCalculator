@@ -57,6 +57,8 @@ public class AlternateRecipeManager : MonoBehaviour
         
         foreach (PartRecipe partRecipe in availableRecipes)
         {
+            if (partRecipe.active)
+                continue;
             AlternateRecipeButton recipeButton = Instantiate(recipeButtonPrefab, availableRecipeContainer);
             recipeButton.alternateRecipeManager = this;
             recipeButton.recipe = partRecipe;
@@ -78,14 +80,12 @@ public class AlternateRecipeManager : MonoBehaviour
         if (!recipe.active)
         {
             activeRecipes.Add(recipe);
-            availableRecipes.Remove(recipe);
             recipe.part.activeRecipe = recipe;
             recipe.active = true;
         }
         else
         {
             activeRecipes.Remove(recipe);
-            availableRecipes.Add(recipe);
             if(recipe.part.activeRecipe == recipe)
                 recipe.part.activeRecipe = recipe.part.defaultRecipe;
             recipe.active = false;

@@ -119,6 +119,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &2243532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5083839786846974007, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+  m_PrefabInstance: {fileID: 3504993973410017654}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &2243533 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+  m_PrefabInstance: {fileID: 3504993973410017654}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &37827833
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +530,8 @@ GameObject:
   m_Component:
   - component: {fileID: 160194923}
   - component: {fileID: 160194924}
+  - component: {fileID: 160194928}
+  - component: {fileID: 160194929}
   m_Layer: 5
   m_Name: AvailableAlternateRecipes
   m_TagString: Untagged
@@ -528,18 +546,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160194922}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1437175347}
+  m_Father: {fileID: 1722472658}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: 0}
-  m_SizeDelta: {x: 175, y: -40}
-  m_Pivot: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 20.000015}
+  m_SizeDelta: {x: 0, y: -420}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &160194924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,8 +573,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Top: 20
+    m_Bottom: 20
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
@@ -566,6 +584,28 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!222 &160194928
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160194922}
+  m_CullTransparentMesh: 1
+--- !u!114 &160194929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160194922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &262889456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1302,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1320, y: 0}
+  m_SizeDelta: {x: 1020, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &751289909
 GameObject:
@@ -2310,13 +2350,13 @@ RectTransform:
   - {fileID: 1069825938}
   - {fileID: 1942845075}
   - {fileID: 1828859534}
-  - {fileID: 160194923}
+  - {fileID: 1980424024}
   m_Father: {fileID: 262889460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 270, y: 25}
-  m_SizeDelta: {x: 400, y: 500}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1456184485
 GameObject:
@@ -2349,6 +2389,7 @@ RectTransform:
   m_Children:
   - {fileID: 1924788773}
   - {fileID: 298487368}
+  - {fileID: 2132214952}
   - {fileID: 730128961}
   m_Father: {fileID: 262889460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2736,7 +2777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b824b200d0768784a9c12c46da5ccf91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputPart: {fileID: 11400000, guid: 998caef4d785043c5864870936229684, type: 2}
+  outputPart: {fileID: 11400000, guid: 8d611c2c83fdb692dad82bfd0a622aa9, type: 2}
   outputImage: {fileID: 577182792}
   outputText: {fileID: 1532737693}
   amountText: {fileID: 2145869038}
@@ -2748,6 +2789,7 @@ MonoBehaviour:
   productionTree: {fileID: 996716920}
   productionBranchPrefab: {fileID: 4048650871136676356, guid: ecf84b8d8dbf96696b0b26c79bc7b75c, type: 3}
   productionNodeContainerPrefab: {fileID: 4802170073049697724, guid: fbd05e6b62633f297a9647bbccd03f8c, type: 3}
+  branchBaseContainer: {fileID: 1806663978}
   startingProductionNode: {fileID: 1587381876}
   productionNodePrefab: {fileID: 4666647659323185780, guid: 095be19c5dad6b9a89c6d65b8e4935f7, type: 3}
   lineDrawerPrefab: {fileID: 4208522112190448596, guid: ef21c851a9f672522a88faff8c2f2cd0, type: 3}
@@ -2801,7 +2843,7 @@ MonoBehaviour:
   alternateRecipes:
   - name: Basic Iron Ingot
     part: {fileID: 11400000, guid: 974d31ad2aaee2cd092ed4cb5d04509e, type: 2}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 50
     active: 0
     partIngredients: []
@@ -2812,7 +2854,7 @@ MonoBehaviour:
       amount: 0.5
   - name: Iron Wire
     part: {fileID: 11400000, guid: 61a5ae290b17c688fa1fd690d3b49cca, type: 2}
-    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 22.5
     active: 0
     partIngredients:
@@ -2822,7 +2864,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Stitched Iron Plate
     part: {fileID: 11400000, guid: b1c6f6f2a58e324319ddbc11bcc82eb7, type: 2}
-    productionIcon: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 5.6
     active: 0
     partIngredients:
@@ -2835,7 +2877,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Iron Alloy Ingot
     part: {fileID: 11400000, guid: 974d31ad2aaee2cd092ed4cb5d04509e, type: 2}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
     productionPerMinute: 75
     active: 0
     partIngredients: []
@@ -2846,7 +2888,7 @@ MonoBehaviour:
       amount: 0.1333
   - name: Copper Alloy Ingot
     part: {fileID: 11400000, guid: 945108f6a38238cc89941ca57499079a, type: 2}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
     productionPerMinute: 100
     active: 0
     partIngredients: []
@@ -2857,7 +2899,7 @@ MonoBehaviour:
       amount: 0.5
   - name: Solid Steel Ingot
     part: {fileID: 11400000, guid: dc2969fd9ce54cb2a9d890dd59ee078d, type: 2}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
     productionPerMinute: 60
     active: 0
     partIngredients:
@@ -2869,7 +2911,7 @@ MonoBehaviour:
       amount: 0.6667
   - name: Fine Concrete
     part: {fileID: 11400000, guid: fe246a40f45aa6f04b70c478370b690b, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 50
     active: 0
     partIngredients:
@@ -2881,7 +2923,7 @@ MonoBehaviour:
       amount: 1.2
   - name: Cheap Silica
     part: {fileID: 11400000, guid: fe246a40f45aa6f04b70c478370b690b, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 50
     active: 0
     partIngredients: []
@@ -2892,7 +2934,7 @@ MonoBehaviour:
       amount: 0.7142
   - name: Steel Rod
     part: {fileID: 11400000, guid: de9e6f209dacec41bb4a7774edc9c8f5, type: 2}
-    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 48
     active: 0
     partIngredients:
@@ -2902,7 +2944,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Cast Screw
     part: {fileID: 11400000, guid: e681c159d947140a296d182ddce06ba4, type: 2}
-    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 50
     active: 0
     partIngredients:
@@ -2912,7 +2954,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Steel Screw
     part: {fileID: 11400000, guid: e681c159d947140a296d182ddce06ba4, type: 2}
-    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 50
     active: 0
     partIngredients:
@@ -2922,7 +2964,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Steel Cast Plate
     part: {fileID: 11400000, guid: 998caef4d785043c5864870936229684, type: 2}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 45
     active: 0
     partIngredients:
@@ -2935,7 +2977,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Bolted Iron Plate
     part: {fileID: 11400000, guid: b1c6f6f2a58e324319ddbc11bcc82eb7, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 15
     active: 0
     partIngredients:
@@ -2948,7 +2990,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Iron Pipe
     part: {fileID: 11400000, guid: c4e80d0c960c070298425e5dbad10320, type: 2}
-    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 25
     active: 0
     partIngredients:
@@ -2958,7 +3000,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Molded Steel Pipe
     part: {fileID: 11400000, guid: c4e80d0c960c070298425e5dbad10320, type: 2}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 50
     active: 0
     partIngredients:
@@ -2970,7 +3012,7 @@ MonoBehaviour:
       amount: 0.6
   - name: Molded Steel Beam
     part: {fileID: 11400000, guid: b2c68d673de4c8994a2ab75ca81fb1e2, type: 2}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 45
     active: 0
     partIngredients:
@@ -2982,7 +3024,7 @@ MonoBehaviour:
       amount: 1.7778
   - name: Encased Industrial Pipe
     part: {fileID: 11400000, guid: 73c233cf53c6aae6caad2428cc034bc9, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 4
     active: 0
     partIngredients:
@@ -2995,7 +3037,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Copper Rotor
     part: {fileID: 11400000, guid: 25c62d51a8d3566e08882721dd417714, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 11.25
     active: 0
     partIngredients:
@@ -3008,7 +3050,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Fused Quickwire
     part: {fileID: 11400000, guid: 2eb3d4bf0458b564aa0234f8e1d6334a, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 90
     active: 0
     partIngredients:
@@ -3021,7 +3063,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Fused Wire
     part: {fileID: 11400000, guid: 61a5ae290b17c688fa1fd690d3b49cca, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 90
     active: 0
     partIngredients:
@@ -3034,7 +3076,7 @@ MonoBehaviour:
     materialIngredients: []
   - name: Quickwire Stator
     part: {fileID: 11400000, guid: bedef6e588ad46f6cbb6b9fed9edd58c, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 8
     active: 0
     partIngredients:
@@ -3045,17 +3087,46 @@ MonoBehaviour:
       amount: 7.5
       productionNode: {fileID: 0}
     materialIngredients: []
-  - name: Quickwire Stator
-    part: {fileID: 11400000, guid: bedef6e588ad46f6cbb6b9fed9edd58c, type: 2}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
-    productionPerMinute: 8
+  - name: Rigor Motor
+    part: {fileID: 11400000, guid: b8ab762455a0d16928d131010ce624b9, type: 2}
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 7.5
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 25c62d51a8d3566e08882721dd417714, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: bedef6e588ad46f6cbb6b9fed9edd58c, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 8d611c2c83fdb692dad82bfd0a622aa9, type: 2}
+      amount: 0.1667
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  - name: Steel Rotor
+    part: {fileID: 11400000, guid: 25c62d51a8d3566e08882721dd417714, type: 2}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 5
     active: 0
     partIngredients:
     - part: {fileID: 11400000, guid: c4e80d0c960c070298425e5dbad10320, type: 2}
       amount: 2
       productionNode: {fileID: 0}
-    - part: {fileID: 11400000, guid: 2eb3d4bf0458b564aa0234f8e1d6334a, type: 2}
-      amount: 7.5
+    - part: {fileID: 11400000, guid: 61a5ae290b17c688fa1fd690d3b49cca, type: 2}
+      amount: 6
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  - name: Steeled Frame
+    part: {fileID: 11400000, guid: 0a6be7ce1fa7b3620b97b54a2fc24ac8, type: 2}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 3
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: c4e80d0c960c070298425e5dbad10320, type: 2}
+      amount: 3.3333
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: b1c6f6f2a58e324319ddbc11bcc82eb7, type: 2}
+      amount: 0.6667
       productionNode: {fileID: 0}
     materialIngredients: []
 --- !u!114 &1655496373
@@ -3095,6 +3166,196 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2eb3d4bf0458b564aa0234f8e1d6334a, type: 2}
   - {fileID: 11400000, guid: d41542ea613676d9ab6840f27827632e, type: 2}
   - {fileID: 11400000, guid: ba47fbb88817df81e98606dd32d18f63, type: 2}
+  - {fileID: 11400000, guid: 81694d4f9c5617d3c91f8a80049ce31e, type: 2}
+  - {fileID: 11400000, guid: 8d611c2c83fdb692dad82bfd0a622aa9, type: 2}
+--- !u!1 &1722472657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1722472658}
+  - component: {fileID: 1722472659}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1722472658
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722472657}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 160194923}
+  m_Father: {fileID: 1980424024}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1722472659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722472657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
+  m_Softness: {x: 0, y: 10}
+--- !u!1 &1806663977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806663978}
+  - component: {fileID: 1806663979}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1806663978
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806663977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2132214952}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1806663979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806663977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!1 &1818069199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818069200}
+  - component: {fileID: 1818069202}
+  - component: {fileID: 1818069201}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1818069200
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818069199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2132214952}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1818069201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818069199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.91556245, g: 0.64335257, b: 0.3691637, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1818069202
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818069199}
+  m_CullTransparentMesh: 1
 --- !u!1 &1828859533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,7 +3476,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
+  m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -3456,6 +3717,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1956647755}
   m_CullTransparentMesh: 1
+--- !u!1 &1980424023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1980424024}
+  - component: {fileID: 1980424028}
+  - component: {fileID: 1980424027}
+  m_Layer: 5
+  m_Name: AvailableRecipesScrollRect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1980424024
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980424023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000061035156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2243533}
+  - {fileID: 1722472658}
+  m_Father: {fileID: 1437175347}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -30, y: 0}
+  m_SizeDelta: {x: 200, y: -40}
+  m_Pivot: {x: 1, y: 0.5}
+--- !u!222 &1980424027
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980424023}
+  m_CullTransparentMesh: 1
+--- !u!114 &1980424028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980424023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 160194923}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 2.5
+  m_Viewport: {fileID: 1437175347}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 2243532}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1984140940
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,6 +3927,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984140940}
   m_CullTransparentMesh: 1
+--- !u!1 &2132214951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2132214952}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2132214952
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132214951}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1818069200}
+  - {fileID: 1806663978}
+  m_Father: {fileID: 1456184486}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2145869036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3689,7 +4064,19 @@ MonoBehaviour:
   m_CharacterLimit: 4
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1655496369}
+        m_TargetAssemblyTypeName: RecipeCalculator, Assembly-CSharp
+        m_MethodName: OnAmountChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnSubmit:
     m_PersistentCalls:
       m_Calls: []
@@ -3707,19 +4094,7 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1655496369}
-        m_TargetAssemblyTypeName: RecipeCalculator, Assembly-CSharp
-        m_MethodName: OnAmountChanged
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3779,6 +4154,111 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145869036}
   m_CullTransparentMesh: 1
+--- !u!1001 &3504993973410017654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1980424024}
+    m_Modifications:
+    - target: {fileID: 214866189346708348, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 214866189346708348, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1110298505553081473, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4637583649535325074, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
+      propertyPath: m_Name
+      value: Scrollbar
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c88e6532842b371bb97b1081c24ceaf6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

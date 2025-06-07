@@ -16,16 +16,21 @@ public class LineDrawer : MonoBehaviour
     
     IEnumerator DrawLineCo(RectTransform from, RectTransform to)
     {
-        float duration = 0.5f;
+        float duration = 0.1f;
         float timeElapsed = 0;
         
-        while(duration > timeElapsed)
-        {
-            lineRenderer.SetPosition(0, from.position - new Vector3(0, 0, -1));
-            lineRenderer.SetPosition(1, to.position - new Vector3(0, 0, -1));
-            timeElapsed += Time.deltaTime;
-            yield return null;
-        }
+        yield return new WaitForSeconds(duration);
+        
+        lineRenderer.SetPosition(0, from.position - new Vector3(0, 0, -1));
+        lineRenderer.SetPosition(1, to.position - new Vector3(0, 0, -1));
+        
+        //while(duration > timeElapsed)
+        //{
+        //    lineRenderer.SetPosition(0, from.position - new Vector3(0, 0, -1));
+        //    lineRenderer.SetPosition(1, to.position - new Vector3(0, 0, -1));
+        //    timeElapsed += Time.deltaTime;
+        //    yield return null;
+        //}
 
     }
 }

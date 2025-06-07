@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8e983bb519b8dd1d09323b1ba3fefca6
+guid: 0f17f58f50c28654896e14efc185e38c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2368762972916115827
-    second: Steel_Pipe_0
+      213: -8502596578486229691
+    second: Steel_Pipe 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Steel_Pipe_0
+      name: Steel_Pipe 1_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
-        width: 80
-        height: 120
+        x: 51
+        y: 3
+        width: 158
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d869c3a50a6702fd0800000000000000
-      internalID: -2368762972916115827
+      spriteID: 54560e6e575b00a80800000000000000
+      internalID: -8502596578486229691
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Steel_Pipe_0: -2368762972916115827
+      Steel_Pipe 1_0: -8502596578486229691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

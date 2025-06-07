@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Smart Plating
   m_EditorClassIdentifier: 
-  icon: {fileID: -1438640424350542691, guid: bcf57c0cb286dbd1eabb421a968e6fe3, type: 3}
+  icon: {fileID: 21300000, guid: bcf57c0cb286dbd1eabb421a968e6fe3, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
     productionPerMinute: 2
     active: 0
     partIngredients:

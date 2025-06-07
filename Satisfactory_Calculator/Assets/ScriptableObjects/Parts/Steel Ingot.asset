@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Steel Ingot
   m_EditorClassIdentifier: 
-  icon: {fileID: -2171085473540441972, guid: f9f6400e2edfb05d68c8a6431e578089, type: 3}
+  icon: {fileID: 21300000, guid: f9f6400e2edfb05d68c8a6431e578089, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: -3089727717190005133, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionIcon: {fileID: 21300000, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
     productionPerMinute: 45
     active: 0
     partIngredients: []

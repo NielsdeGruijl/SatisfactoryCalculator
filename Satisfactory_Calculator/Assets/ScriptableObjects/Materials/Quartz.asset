@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9121d4bd04b5b6bf9e4f62dc6253669, type: 3}
   m_Name: Quartz
   m_EditorClassIdentifier: 
-  icon: {fileID: 8262394147113034666, guid: f1c419c04bade658da833546a479a001, type: 3}
+  icon: {fileID: 21300000, guid: f1c419c04bade658da833546a479a001, type: 3}

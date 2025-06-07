@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Steel Pipe
   m_EditorClassIdentifier: 
-  icon: {fileID: -2368762972916115827, guid: 8e983bb519b8dd1d09323b1ba3fefca6, type: 3}
+  icon: {fileID: 21300000, guid: 0f17f58f50c28654896e14efc185e38c, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 20
     active: 0
     partIngredients:

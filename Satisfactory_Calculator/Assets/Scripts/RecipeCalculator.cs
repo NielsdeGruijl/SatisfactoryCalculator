@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -26,6 +27,7 @@ public class RecipeCalculator : MonoBehaviour
     [SerializeField] private Transform productionTree;
     [SerializeField] private Transform productionBranchPrefab;
     [SerializeField] private Transform productionNodeContainerPrefab;
+    [SerializeField] private Transform branchBaseContainer;
     [SerializeField] private ProductionNode startingProductionNode;
     [SerializeField] private ProductionNode productionNodePrefab;
     [SerializeField] private LineDrawer lineDrawerPrefab;
@@ -36,19 +38,23 @@ public class RecipeCalculator : MonoBehaviour
     private List<CostItem> costs;
 
     private List<GameObject> lines;
+    private List<ProductionNode> productionBranchBases;
     
     private Dictionary<Part, float> costParts;
     Dictionary<Material, float> costMaterials;
 
     private float amountToCraft = 1;
 
+    private bool can;
+
     private void Start()
     {
         recipeTiersUI = new List<Transform>();
         lines = new List<GameObject>();
         costs = new List<CostItem>();
+        productionBranchBases = new List<ProductionNode>();
         
-        amountText.text = 1.ToString();
+        amountText.text = "1";
         
         GenerateRecipe(outputPart);
     }
@@ -64,6 +70,7 @@ public class RecipeCalculator : MonoBehaviour
         ClearRecipe();
         outputImage.sprite = outputPart.icon;
         outputText.text = pOutputPart.name;
+        can = true;
         CreateProductionTree();
     }
 
@@ -124,9 +131,12 @@ public class RecipeCalculator : MonoBehaviour
         
         Transform productionBranchObject =  Instantiate(productionBranchPrefab, productionTree);
         recipeTiersUI.Add(productionBranchObject);
-
-        ProductionNode tProductionNodeObject = Instantiate(productionNodePrefab, productionBranchObject);
+        
+        //Transform tproductionNodeContainerObject =  Instantiate(productionNodeContainerPrefab, productionBranchObject);
+        
+        ProductionNode tProductionNodeObject = Instantiate(productionNodePrefab, branchBaseContainer);
         SetUpProductionNode(tProductionNodeObject, pPart, pAmount);
+        productionBranchBases.Add(tProductionNodeObject);
         
         Canvas.ForceUpdateCanvases();
         CreateLineDrawer(startingProductionNode.GetComponent<RectTransform>(), tProductionNodeObject.GetComponent<RectTransform>());
@@ -141,8 +151,10 @@ public class RecipeCalculator : MonoBehaviour
         {
             Dictionary<Part, float> thisTier = tiers.ElementAt(0);
             Dictionary<Part, float> nextTier = new Dictionary<Part, float>();
-            
-            Transform productionNodeContainerObject = Instantiate(productionNodeContainerPrefab, productionBranchObject);
+
+            bool canMakeNodeContainer = true;
+
+            Transform productionNodeContainerObject = null;
             
             for (int i = 0; i < thisTier.Count; i++)
             {
@@ -153,6 +165,12 @@ public class RecipeCalculator : MonoBehaviour
 
                 foreach (PartIngredient ingredient in recipe.partIngredients)
                 {
+                    if (canMakeNodeContainer)
+                    {
+                        productionNodeContainerObject = Instantiate(productionNodeContainerPrefab, productionBranchObject);
+                        canMakeNodeContainer = false;
+                    }
+                    
                     if (!costParts.TryAdd(ingredient.part, ingredient.amount * amountToCraft))
                         costParts[ingredient.part] += ingredient.amount * amountToCraft;
                     
@@ -184,6 +202,17 @@ public class RecipeCalculator : MonoBehaviour
                 tiers.Remove(thisTier);
             }
         }
+        
+        RectTransform productionNode = tProductionNodeObject.GetComponent<RectTransform>();
+        RectTransform productionBranch = productionBranchObject.GetComponent<RectTransform>();
+        
+        //productionNode.rect.Set(productionNode.rect.x, productionNode.rect.y, productionNode.rect.width, productionBranch.rect.height);
+
+        if (can)
+        {
+            StartCoroutine(SetBranchBaseHeightCo(productionNode, productionBranch));
+            can = false;
+        }
     }
 
     private void SetUpProductionNode(ProductionNode pNode, Part pPart, float pAmount)
@@ -202,6 +231,18 @@ public class RecipeCalculator : MonoBehaviour
         
         lines.Add(line.gameObject);
     }
+
+    private IEnumerator SetBranchBaseHeightCo(RectTransform baseRect, RectTransform branchRect)
+    {
+        yield return new WaitForSeconds(0.01f);
+        for (int i = 0; i < productionBranchBases.Count; i++)
+        {
+            RectTransform a = productionBranchBases[i].GetComponent<RectTransform>();
+            RectTransform b = recipeTiersUI[i].GetComponent<RectTransform>();
+            
+            a.sizeDelta = new Vector2(a.rect.width, b.rect.height);
+        }
+    }
     
     private void ClearRecipe()
     {
@@ -219,14 +260,24 @@ public class RecipeCalculator : MonoBehaviour
         for(int i = 0; i < lineCount; i++)
             Destroy(lines[i].gameObject);
         lines.Clear();
+
+        float branchBasesCount = productionBranchBases.Count;
+        for (int i = 0; i < branchBasesCount; i++)
+            Destroy(productionBranchBases[i].gameObject);
+        productionBranchBases.Clear();
     }
     
     public void OnAmountChanged()
     {
-        if (amountText.text == "" || costs.Count <= 0)
+        if (costs.Count <= 0)
             return;
         
-        //ClearRecipe();
+        if (amountText.text == "")
+        {
+            amountText.text = "1";
+            amountToCraft = 1;
+        }
+        
         amountToCraft = float.Parse(amountText.text);
         GenerateRecipe(outputPart);
     }

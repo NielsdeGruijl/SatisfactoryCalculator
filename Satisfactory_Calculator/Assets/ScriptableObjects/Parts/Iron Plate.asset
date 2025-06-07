@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Iron Plate
   m_EditorClassIdentifier: 
-  icon: {fileID: -7289526898057834127, guid: a86ed803f564c57d0ad13a3f224ffc0d, type: 3}
+  icon: {fileID: 21300000, guid: a86ed803f564c57d0ad13a3f224ffc0d, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
     productionPerMinute: 20
     active: 0
     partIngredients:

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Copper Ingot
   m_EditorClassIdentifier: 
-  icon: {fileID: 9027471841030609063, guid: 324d93f764d0ce8d5bf9d389d92feffb, type: 3}
+  icon: {fileID: 21300000, guid: 324d93f764d0ce8d5bf9d389d92feffb, type: 3}
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: -1554214871758326463, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
+    productionIcon: {fileID: 21300000, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
     productionPerMinute: 30
     active: 0
     partIngredients: []

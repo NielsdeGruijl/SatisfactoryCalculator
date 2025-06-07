@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9121d4bd04b5b6bf9e4f62dc6253669, type: 3}
   m_Name: Coal
   m_EditorClassIdentifier: 
-  icon: {fileID: -228819513787663229, guid: cefd9a6b06976ab64a5908807ac832a1, type: 3}
+  icon: {fileID: 21300000, guid: cefd9a6b06976ab64a5908807ac832a1, type: 3}
