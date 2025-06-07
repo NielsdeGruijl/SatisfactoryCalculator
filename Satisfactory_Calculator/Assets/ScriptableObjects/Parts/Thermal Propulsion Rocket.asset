@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Thermal Propulsion Rocket
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: c2488ae97bc24c04d8f5d6335e90428b, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 1
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 99b7d68bcf4953a27a2934fdf13eca84, type: 2}
+      amount: 2.5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 3a90a48f1d47561c79cdacf266a02abe, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: b2144e7163e64865f9daa609de691f22, type: 2}
+      amount: 3
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 02bda6a8399c3bc64861ce15756e5d18, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []
+  producer:
+    icon: {fileID: 0}
+    production: 0

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Encased Uranium Cell
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 97466aae53e9235b0a1d9a71d0537465, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: 06b014b992a7b1f2b85fd26fea20a39e, type: 3}
+    productionPerMinute: 25
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: fe246a40f45aa6f04b70c478370b690b, type: 2}
+      amount: 0.6
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: da4804d9afd9f7851b2a89d568f7e37a, type: 2}
+      amount: 1.6
+      productionNode: {fileID: 0}
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 2fbae4295ad2eb842ad268657b320094, type: 2}
+      amount: 2
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []
+  producer:
+    icon: {fileID: 0}
+    production: 0
