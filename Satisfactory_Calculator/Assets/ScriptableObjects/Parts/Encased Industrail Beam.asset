@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Encased Industrail Beam
+  m_EditorClassIdentifier: 
+  icon: {fileID: 4528711024451984207, guid: 0b66d82e8fe68babeb3eb96be370bd0b, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 6
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: b2c68d673de4c8994a2ab75ca81fb1e2, type: 2}
+      amount: 3
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: fe246a40f45aa6f04b70c478370b690b, type: 2}
+      amount: 6
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 6
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: b2c68d673de4c8994a2ab75ca81fb1e2, type: 2}
+      amount: 3
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: fe246a40f45aa6f04b70c478370b690b, type: 2}
+      amount: 6
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  producer:
+    icon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    production: 0

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Copper Sheet
+  m_EditorClassIdentifier: 
+  icon: {fileID: -6658795056632916003, guid: d81b7de0c2b09e6b3bceb52cf74897a8, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionPerMinute: 10
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 945108f6a38238cc89941ca57499079a, type: 2}
+      amount: 2
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionPerMinute: 10
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 945108f6a38238cc89941ca57499079a, type: 2}
+      amount: 2
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  producer:
+    icon: {fileID: 1448397813929791850, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    production: 10

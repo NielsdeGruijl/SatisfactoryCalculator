@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Caterium Ingot
+  m_EditorClassIdentifier: 
+  icon: {fileID: -7216887611995645611, guid: 34c63e997e5fe7159b676452aac02b26, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: -1554214871758326463, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
+    productionPerMinute: 15
+    active: 0
+    partIngredients: []
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 34091b2fb87b6995ab6d20d9c6dffd29, type: 2}
+      amount: 3
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: -1554214871758326463, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
+    productionPerMinute: 15
+    active: 0
+    partIngredients: []
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 34091b2fb87b6995ab6d20d9c6dffd29, type: 2}
+      amount: 3
+  producer:
+    icon: {fileID: -1554214871758326463, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
+    production: 0

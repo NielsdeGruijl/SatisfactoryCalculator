@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Rotor
+  m_EditorClassIdentifier: 
+  icon: {fileID: -1121224057624635036, guid: 057bc06467e24682a9e41b1f457a8811, type: 3}
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 4
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: de9e6f209dacec41bb4a7774edc9c8f5, type: 2}
+      amount: 5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: e681c159d947140a296d182ddce06ba4, type: 2}
+      amount: 25
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 4
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: de9e6f209dacec41bb4a7774edc9c8f5, type: 2}
+      amount: 5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: e681c159d947140a296d182ddce06ba4, type: 2}
+      amount: 25
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  producer:
+    icon: {fileID: -1817607712858517885, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    production: 4
