@@ -6,8 +6,8 @@ public class Part : ScriptableObject
 {
     public Sprite icon;
 
+    public int tier;
+    
     public PartRecipe defaultRecipe;
     public PartRecipe activeRecipe;
-    
-    public Producer producer;
 }

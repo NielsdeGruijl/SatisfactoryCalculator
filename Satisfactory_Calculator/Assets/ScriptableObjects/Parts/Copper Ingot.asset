@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Copper Ingot
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 324d93f764d0ce8d5bf9d389d92feffb, type: 3}
+  tier: 1
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -33,6 +34,3 @@ MonoBehaviour:
     materialIngredients:
     - material: {fileID: 11400000, guid: d092e1695888046a3bbac8f0910bd11b, type: 2}
       amount: 1
-  producer:
-    icon: {fileID: -1554214871758326463, guid: 4c675aa731aa140dfaffaf6ea6cbcdc3, type: 3}
-    production: 0

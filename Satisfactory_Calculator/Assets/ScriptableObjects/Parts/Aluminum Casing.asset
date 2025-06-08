@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Aluminum Casing
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 3e3b25b97dfad95dbb5f11969136acae, type: 3}
+  tier: 7
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -35,6 +36,3 @@ MonoBehaviour:
       amount: 1.5
       productionNode: {fileID: 0}
     materialIngredients: []
-  producer:
-    icon: {fileID: 0}
-    production: 0

@@ -1,32 +1,27 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class OutputSelector : MonoBehaviour
 {
     [SerializeField] private RecipeCalculator calculator;
+    [SerializeField] private WorldRecipeCalculator worldCalculator;
+    [SerializeField] private PartListSO partsSO;
     
     [Header("OutputMenu UI")]
     [SerializeField] private Transform outputSelectorMenu;
     [SerializeField] private Transform outputMenuItemContainer;
     [SerializeField] private OutputMenuItem outputMenuItemPrefab;
 
-    private PartsList partsList;
-
-    private List<Part> sortedPartsList;
-    
     private void Start()
     {
-        partsList = GetComponent<PartsList>();
-
-        sortedPartsList = new List<Part>(partsList.parts);
-        
         outputSelectorMenu.gameObject.SetActive(false);
         GenerateOutputMenu();
     }
 
     private void GenerateOutputMenu()
     {
-        foreach (Part part in partsList.parts)
+        foreach (Part part in partsSO.parts)
         {
             OutputMenuItem outputMenuItem = Instantiate(outputMenuItemPrefab, outputMenuItemContainer);
             outputMenuItem.SetPart(part);
@@ -34,14 +29,13 @@ public class OutputSelector : MonoBehaviour
         }
     }
 
-    private void SortParts()
-    {
-        
-    }
-    
     public void SelectOutputPart(Part part)
     {
-        calculator.SetOutputPart(part);
+        if(calculator)
+            calculator.SetOutputPart(part);
+        if(worldCalculator)
+            worldCalculator.OnSetOutputPart(part);
+        
         outputSelectorMenu.gameObject.SetActive(false);
     }
 

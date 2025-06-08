@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Plastic
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 7581c9c98e43caac685f09ea70056a27, type: 3}
+  tier: 5
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -33,6 +34,3 @@ MonoBehaviour:
     materialIngredients:
     - material: {fileID: 11400000, guid: f416980251b7c7494a0fcaddd00092a8, type: 2}
       amount: 1.5
-  producer:
-    icon: {fileID: 0}
-    production: 0

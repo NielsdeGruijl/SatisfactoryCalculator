@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9121d4bd04b5b6bf9e4f62dc6253669, type: 3}
   m_Name: Crude Oil
   m_EditorClassIdentifier: 
-  icon: {fileID: -8822009694372032918, guid: f5d0f022a1539b0aa94afc1007955b39, type: 3}
+  icon: {fileID: 21300000, guid: f5d0f022a1539b0aa94afc1007955b39, type: 3}

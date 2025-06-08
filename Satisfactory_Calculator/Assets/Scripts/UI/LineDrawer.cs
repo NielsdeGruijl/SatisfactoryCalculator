@@ -16,7 +16,7 @@ public class LineDrawer : MonoBehaviour
     
     IEnumerator DrawLineCo(RectTransform from, RectTransform to)
     {
-        float duration = 0.1f;
+        float duration = 0.5f;
         float timeElapsed = 0;
         
         yield return new WaitForSeconds(duration);

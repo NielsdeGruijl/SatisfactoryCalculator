@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Crystal Oscillator
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 31d4820f2cd8c38dea1025fc11d09b5b, type: 3}
+  tier: 6
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -47,6 +48,3 @@ MonoBehaviour:
       amount: 2.5
       productionNode: {fileID: 0}
     materialIngredients: []
-  producer:
-    icon: {fileID: 0}
-    production: 0

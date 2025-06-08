@@ -18,4 +18,12 @@ public class OutputMenuItem : MonoBehaviour
     {
         outputSelector.SelectOutputPart(part);
     }
+    
+    public int CompareTo(OutputMenuItem other)
+    {
+        if (other == null)
+            return 1;
+        
+        return part.tier.CompareTo(other.part.tier);
+    }
 }

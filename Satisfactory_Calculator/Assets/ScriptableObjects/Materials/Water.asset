@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9121d4bd04b5b6bf9e4f62dc6253669, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
-  icon: {fileID: 6049605792901559095, guid: 0fcb39d3c67acdc62b6620623a1cbc55, type: 3}
+  icon: {fileID: 21300000, guid: 0fcb39d3c67acdc62b6620623a1cbc55, type: 3}

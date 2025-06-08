@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Encased Uranium Cell
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 97466aae53e9235b0a1d9a71d0537465, type: 3}
+  tier: 8
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -37,6 +38,3 @@ MonoBehaviour:
     active: 0
     partIngredients: []
     materialIngredients: []
-  producer:
-    icon: {fileID: 0}
-    production: 0

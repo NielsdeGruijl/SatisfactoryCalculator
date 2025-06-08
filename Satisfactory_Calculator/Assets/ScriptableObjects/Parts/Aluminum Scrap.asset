@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Aluminum Scrap
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 97c863ae641235d7d908bb83fca77728, type: 3}
+  tier: 7
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -39,6 +40,3 @@ MonoBehaviour:
     materialIngredients:
     - material: {fileID: 11400000, guid: f37fe6671a3043b85b3d2ee4f6f99e2b, type: 2}
       amount: 0.3333
-  producer:
-    icon: {fileID: 0}
-    production: 0

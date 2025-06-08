@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Quartz Crystal
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 06e8b4706d1452b3dae63246db63f891, type: 3}
+  tier: 1
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -33,6 +34,3 @@ MonoBehaviour:
     materialIngredients:
     - material: {fileID: 11400000, guid: 244dbf92db85a3b62ae5e0f83407802e, type: 2}
       amount: 1.6667
-  producer:
-    icon: {fileID: 0}
-    production: 0

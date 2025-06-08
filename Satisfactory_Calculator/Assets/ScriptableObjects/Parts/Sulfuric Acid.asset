@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Sulfuric Acid
   m_EditorClassIdentifier: 
   icon: {fileID: 21300000, guid: 042556327863c7e88a6cc17e8a3eed42, type: 3}
+  tier: 7
   defaultRecipe:
     name: 
     part: {fileID: 0}
@@ -37,6 +38,3 @@ MonoBehaviour:
       amount: 1
     - material: {fileID: 11400000, guid: 33eb5fe31638016299a6523d782b226c, type: 2}
       amount: 1
-  producer:
-    icon: {fileID: 0}
-    production: 0

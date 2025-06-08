@@ -18,11 +18,6 @@ public class RecipeCalculator : MonoBehaviour
     [SerializeField] private Transform costContainer;
     [SerializeField] private CostItem costPrefab;
     
-    [Header("Recipe")]
-    [SerializeField] private Transform recipeTierContainer;
-    [SerializeField] private Transform recipeTierPrefab;
-    [SerializeField] private Ingredient ingredientPrefab;
-
     [Header("ProductionTree")]
     [SerializeField] private Transform productionTree;
     [SerializeField] private Transform productionBranchPrefab;
@@ -234,7 +229,7 @@ public class RecipeCalculator : MonoBehaviour
 
     private IEnumerator SetBranchBaseHeightCo(RectTransform baseRect, RectTransform branchRect)
     {
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForSeconds(1f);
         for (int i = 0; i < productionBranchBases.Count; i++)
         {
             RectTransform a = productionBranchBases[i].GetComponent<RectTransform>();
