@@ -17,4 +17,20 @@ public class PartRecipe
     public bool active;
     public List<PartIngredient> partIngredients;
     public List<MaterialIngredient> materialIngredients;
+
+    public PartRecipe(PartRecipe other)
+    {
+        if (other == null)
+            return;
+        
+        name = other.name;
+        part = other.part;
+        
+        productionIcon = other.productionIcon;
+        productionPerMinute = other.productionPerMinute;
+        
+        active = other.active;
+        partIngredients = new List<PartIngredient>(other.partIngredients);
+        materialIngredients = new List<MaterialIngredient>(other.materialIngredients);
+    }
 }

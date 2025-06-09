@@ -33,7 +33,7 @@ public class AlternateRecipeManager : MonoBehaviour
         
         foreach (Part part in partLoader.parts)
         {
-            part.activeRecipe = part.defaultRecipe;
+            part.activeRecipe = new PartRecipe(part.defaultRecipe);
         }
         
         activeRecipes = new List<PartRecipe>();

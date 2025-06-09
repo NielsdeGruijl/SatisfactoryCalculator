@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Cooling Device
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Cooling Device
+    part: {fileID: 11400000, guid: b2144e7163e64865f9daa609de691f22, type: 2}
+    productionIcon: {fileID: 21300000, guid: 06b014b992a7b1f2b85fd26fea20a39e, type: 3}
+    productionPerMinute: 5
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: b8ab762455a0d16928d131010ce624b9, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 77a4241544c480e25a6e2bdf53cc00d3, type: 2}
+      amount: 2
+      productionNode: {fileID: 0}
+    materialIngredients:
+    - material: {fileID: 11400000, guid: e55e9c704aa69699da3bba3d159b6b68, type: 2}
+      amount: 12

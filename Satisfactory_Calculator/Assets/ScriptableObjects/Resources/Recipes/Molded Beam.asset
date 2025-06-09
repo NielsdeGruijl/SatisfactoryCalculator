@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Molded Beam
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Molded Beam
+    part: {fileID: 11400000, guid: b2c68d673de4c8994a2ab75ca81fb1e2, type: 2}
+    productionIcon: {fileID: 21300000, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionPerMinute: 45
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: dc2969fd9ce54cb2a9d890dd59ee078d, type: 2}
+      amount: 2.6667
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: fe246a40f45aa6f04b70c478370b690b, type: 2}
+      amount: 1.7778
+      productionNode: {fileID: 0}
+    materialIngredients: []

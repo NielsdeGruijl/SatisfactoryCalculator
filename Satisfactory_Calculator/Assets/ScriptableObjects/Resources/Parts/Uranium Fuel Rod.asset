@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Uranium Fuel Rod
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 24fda8e23fc54280cb2d18c84f84b003, type: 3}
+  tier: 8
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 0.4
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 152b4156d1a2f5367a7997e670875159, type: 2}
+      amount: 50
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 73c233cf53c6aae6caad2428cc034bc9, type: 2}
+      amount: 3
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 5a7846e783cd2d6739c0ed68cf2462e5, type: 2}
+      amount: 5
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []

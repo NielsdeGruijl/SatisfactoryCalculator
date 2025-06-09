@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Insulated Crystal Oscillator
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Insulated Crystal Oscillator
+    part: {fileID: 11400000, guid: 8d611c2c83fdb692dad82bfd0a622aa9, type: 2}
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 1.875
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 81694d4f9c5617d3c91f8a80049ce31e, type: 2}
+      amount: 10
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 47355801b409af68e90c1b97cacebe33, type: 2}
+      amount: 7
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 1c7d15483c738706e98c1b1a9205dc74, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    materialIngredients: []

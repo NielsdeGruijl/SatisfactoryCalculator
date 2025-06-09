@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Dark Matter Residue
+  m_EditorClassIdentifier: 
+  icon: {fileID: -8102898886514897227, guid: 22127c44a5f4360e6813a64ac079d538, type: 3}
+  tier: 9
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 193652166060734674, guid: fb77ab30f4a0f48178892fa84323bcf3, type: 3}
+    productionPerMinute: 0
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 0cb957910e3656375806f819b0a33bc8, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []

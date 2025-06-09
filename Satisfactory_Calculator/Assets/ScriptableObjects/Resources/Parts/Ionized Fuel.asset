@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Ionized Fuel
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 42bf5bbcd58093d8c9b334e9eaf1792b, type: 3}
+  tier: 8
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: 1b0383a7e1d662996b27c15d9fb63a1c, type: 3}
+    productionPerMinute: 40
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 9217ccfa1175d989c9b335c80dd22081, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 94715cf9ecb6776d7be2488d8e9af83c, type: 2}
+      amount: 0.0625
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []

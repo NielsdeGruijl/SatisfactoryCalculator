@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Plutonium Pellet
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 8067ff7e1872fa4629bd3017acba4461, type: 3}
+  tier: 8
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: e827f9b6366b95773a05b7bc0c2339cf, type: 3}
+    productionPerMinute: 30
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: c6b99e9f4e188c9fe9fb9a89f745cf09, type: 2}
+      amount: 3.3333
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: a91d86b2fc77d6df3bb7aa288a56aa8c, type: 2}
+      amount: 0.8333
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []

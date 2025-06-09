@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Heat-Fused Frame
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Heat-Fused Frame
+    part: {fileID: 11400000, guid: 02bda6a8399c3bc64861ce15756e5d18, type: 2}
+    productionIcon: {fileID: 21300000, guid: 06b014b992a7b1f2b85fd26fea20a39e, type: 3}
+    productionPerMinute: 3
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: eb7fbc448debe51caae1830467c70a29, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: fe504b20b2467148aa364dad802849c4, type: 2}
+      amount: 50
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 12778f5573bbbe6159d92f2cc843a741, type: 2}
+      amount: 8
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 8602898ddc44e922790ba7e0a50c5d66, type: 2}
+      amount: 10
+      productionNode: {fileID: 0}
+    materialIngredients: []

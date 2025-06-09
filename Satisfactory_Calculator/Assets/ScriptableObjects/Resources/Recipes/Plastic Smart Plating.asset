@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Plastic Smart Plating
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Plastic Smart Plating
+    part: {fileID: 11400000, guid: 89cc87c6d3f2486f3a97474a7d389acb, type: 2}
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 5
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: b1c6f6f2a58e324319ddbc11bcc82eb7, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 25c62d51a8d3566e08882721dd417714, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 4d79c305448d5107aa8ea41afa8b4fd9, type: 2}
+      amount: 1.5
+      productionNode: {fileID: 0}
+    materialIngredients: []

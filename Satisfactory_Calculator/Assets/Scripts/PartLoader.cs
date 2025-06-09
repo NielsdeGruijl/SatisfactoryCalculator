@@ -6,7 +6,7 @@ public class PartLoader : MonoBehaviour
 {
     public Part[] parts;
     
-    void Start()
+    void Awake()
     {
         string[] partPaths = AssetDatabase.FindAssets("t:Part");
         parts = new Part[partPaths.Length];

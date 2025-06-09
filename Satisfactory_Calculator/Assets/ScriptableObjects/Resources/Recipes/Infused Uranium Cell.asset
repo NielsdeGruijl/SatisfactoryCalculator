@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Infused Uranium Cell
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Infused Uranium Cell
+    part: {fileID: 11400000, guid: 152b4156d1a2f5367a7997e670875159, type: 2}
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 20
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 6bd8c2d32e1bee5d99ad3cd03febe624, type: 2}
+      amount: 0.75
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 2eb3d4bf0458b564aa0234f8e1d6334a, type: 2}
+      amount: 3.75
+      productionNode: {fileID: 0}
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 2fbae4295ad2eb842ad268657b320094, type: 2}
+      amount: 1.25
+    - material: {fileID: 11400000, guid: 33eb5fe31638016299a6523d782b226c, type: 2}
+      amount: 1.25

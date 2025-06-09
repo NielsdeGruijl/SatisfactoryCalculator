@@ -6,7 +6,7 @@ public class AlternateRecipeLoader : MonoBehaviour
 {
     public PartRecipe[] recipes;
     
-    private void Start()
+    private void Awake()
     {
         string[] paths = AssetDatabase.FindAssets("t:AlternateRecipeSO");
         recipes =  new PartRecipe[paths.Length];

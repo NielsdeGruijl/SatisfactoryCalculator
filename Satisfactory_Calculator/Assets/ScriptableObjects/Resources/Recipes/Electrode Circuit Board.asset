@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Electrode Circuit Board
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Electrode Circuit Board
+    part: {fileID: 11400000, guid: 3b1388b45a44939f584b969d8b696257, type: 2}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 5
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 47355801b409af68e90c1b97cacebe33, type: 2}
+      amount: 4
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 9d098e26e69d06d2ea75d4a5ed637e84, type: 2}
+      amount: 8
+      productionNode: {fileID: 0}
+    materialIngredients: []
