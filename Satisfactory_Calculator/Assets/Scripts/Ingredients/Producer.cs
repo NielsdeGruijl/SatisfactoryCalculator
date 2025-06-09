@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-[Serializable]
+/*[Serializable]
 public class Producer
 {
     public Sprite icon;
@@ -26,4 +26,4 @@ public class ProducerDrawer : PropertyDrawer
         
         EditorGUI.EndProperty();
     }
-}
+}*/

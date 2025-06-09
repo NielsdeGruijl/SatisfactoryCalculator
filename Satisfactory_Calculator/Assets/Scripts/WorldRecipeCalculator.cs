@@ -43,7 +43,7 @@ public class WorldRecipeCalculator : MonoBehaviour
     private void Start()
     {
         SetOutputPart(outputPart);
-        GenerateTree();
+        Invoke("GenerateTree", Time.deltaTime);
     }
 
     private void SetOutputPart(Part part)
@@ -72,6 +72,16 @@ public class WorldRecipeCalculator : MonoBehaviour
         {
             if(!inputMaterials.TryAdd(ingredient.material, ingredient.amount * amountToCraft))
                 inputMaterials[ingredient.material] += ingredient.amount * amountToCraft;
+            
+            Transform branchContainer = Instantiate(horizontalContainer, productionTree);
+            MaterialNode node = Instantiate(materialNodePrefab, branchContainer);
+            node.material = ingredient.material;
+            node.amount.text = (ingredient.amount * amountToCraft).ToString("0.0");
+            node.icon.sprite = ingredient.material.icon;
+            
+            productionBranches.Add(branchContainer.gameObject);
+            
+            CreateLineDrawer(node.GetComponent<RectTransform>(), baseProductionNode.GetComponent<RectTransform>());
         }
 
         for (int i = inputMaterials.Count; i > 0; i--)
@@ -83,25 +93,13 @@ public class WorldRecipeCalculator : MonoBehaviour
             inputs.Add(inputMaterialObject.gameObject);
         }
         
-        for (int i = inputParts.Count; i > 0; i--)
+        for (int i =  0; i < inputParts.Count; i++)
         {
-            int index = i - 1;
             CostItem inputPartObject = Instantiate(inputItemPrefab, inputContainer);
-            inputPartObject.icon.sprite =  inputParts.ElementAt(index).Key.icon;
-            inputPartObject.amountText.text = inputParts.ElementAt(index).Value.ToString("0.0");
+            inputPartObject.icon.sprite =  inputParts.ElementAt(i).Key.icon;
+            inputPartObject.amountText.text = inputParts.ElementAt(i).Value.ToString("0.0");
             inputs.Add(inputPartObject.gameObject);
         }
-        
-        /*
-        foreach (KeyValuePair<Part, float> pair in inputParts)
-        {
-
-        }
-        
-        foreach (KeyValuePair<Material, float> pair in inputMaterials)
-        {
-
-        }*/
     }
     
     private void GenerateBranch(PartIngredient baseIngredient)

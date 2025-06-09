@@ -26,9 +26,24 @@ public class CameraController : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-0.01f * camera.orthographicSize);
-                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5, 20), Mathf.Clamp(transform.position.y, -120, 120), transform.position.z);
+                MoveCamera();
             }
         }
+        else if (Input.GetMouseButton(2))
+        {
+            MoveCamera();
+        }
+        
+    }
+
+    private void MoveCamera()
+    {
+#if UNITY_EDITOR
+        transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-1 * camera.orthographicSize * Time.deltaTime);
+#else
+                transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-1 * camera.orthographicSize * Time.deltaTime * 10);
+#endif
+                
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5, 20), Mathf.Clamp(transform.position.y, -120, 120), transform.position.z);
     }
 }

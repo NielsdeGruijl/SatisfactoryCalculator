@@ -27,17 +27,17 @@ public class AlternateRecipeManager : MonoBehaviour
         partLoader = GetComponent<PartLoader>();
         recipeLoader = GetComponent<AlternateRecipeLoader>();
 
-        alternateRecipeMenu.SetActive(false);
-        
         generatedRecipeButtons = new List<AlternateRecipeButton>();
+        
+        activeRecipes = new List<PartRecipe>();
+        availableRecipes = new List<PartRecipe>(recipeLoader.recipes);
+        
+        alternateRecipeMenu.SetActive(false);
         
         foreach (Part part in partLoader.parts)
         {
             part.activeRecipe = new PartRecipe(part.defaultRecipe);
         }
-        
-        activeRecipes = new List<PartRecipe>();
-        availableRecipes = new List<PartRecipe>(recipeLoader.recipes);
         
         GenerateRecipeButtons();
     }
@@ -46,20 +46,27 @@ public class AlternateRecipeManager : MonoBehaviour
     {
         ClearRecipeButtons();
         
-        foreach (PartRecipe partRecipe in activeRecipes)
+        foreach (PartRecipe partRecipe in availableRecipes)
         {
-            AlternateRecipeButton recipeButton = Instantiate(recipeButtonPrefab, activeRecipeContainer);
+            if (partRecipe.active)
+            {
+                if (!activeRecipes.Contains(partRecipe))
+                    activeRecipes.Add(partRecipe);
+
+                partRecipe.part.activeRecipe = partRecipe;
+                continue;
+            }
+            
+            AlternateRecipeButton recipeButton = Instantiate(recipeButtonPrefab, availableRecipeContainer);
             recipeButton.alternateRecipeManager = this;
             recipeButton.recipe = partRecipe;
             recipeButton.alternateRecipeName.text = partRecipe.name;
             generatedRecipeButtons.Add(recipeButton);
         }
         
-        foreach (PartRecipe partRecipe in availableRecipes)
+        foreach (PartRecipe partRecipe in activeRecipes)
         {
-            if (partRecipe.active)
-                continue;
-            AlternateRecipeButton recipeButton = Instantiate(recipeButtonPrefab, availableRecipeContainer);
+            AlternateRecipeButton recipeButton = Instantiate(recipeButtonPrefab, activeRecipeContainer);
             recipeButton.alternateRecipeManager = this;
             recipeButton.recipe = partRecipe;
             recipeButton.alternateRecipeName.text = partRecipe.name;
@@ -79,6 +86,16 @@ public class AlternateRecipeManager : MonoBehaviour
     {
         if (!recipe.active)
         {
+            foreach (PartRecipe tRecipe in activeRecipes)
+            {
+                if (tRecipe.part == recipe.part)
+                {
+                    activeRecipes.Remove(tRecipe);
+                    tRecipe.active = false;
+                    break;
+                }
+            }
+            
             activeRecipes.Add(recipe);
             recipe.part.activeRecipe = recipe;
             recipe.active = true;

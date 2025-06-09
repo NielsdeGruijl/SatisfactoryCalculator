@@ -8,13 +8,15 @@ public class PartLoader : MonoBehaviour
     
     void Awake()
     {
-        string[] partPaths = AssetDatabase.FindAssets("t:Part");
+        /*string[] partPaths = AssetDatabase.FindAssets("t:Part");
         parts = new Part[partPaths.Length];
 
         for (int i = 0; i < partPaths.Length; i++)
         {
             var path = AssetDatabase.GUIDToAssetPath(partPaths[i]);
             parts[i] =  AssetDatabase.LoadAssetAtPath<Part>(path);
-        }
+        }*/
+
+        parts = Resources.LoadAll<Part>("Parts");
     }
 }
