@@ -6,22 +6,24 @@ public class OutputSelector : MonoBehaviour
 {
     [SerializeField] private RecipeCalculator calculator;
     [SerializeField] private WorldRecipeCalculator worldCalculator;
-    [SerializeField] private PartListSO partsSO;
     
     [Header("OutputMenu UI")]
     [SerializeField] private Transform outputSelectorMenu;
     [SerializeField] private Transform outputMenuItemContainer;
     [SerializeField] private OutputMenuItem outputMenuItemPrefab;
 
+    private PartLoader partLoader;
+    
     private void Start()
     {
+        partLoader = GetComponent<PartLoader>();
         outputSelectorMenu.gameObject.SetActive(false);
         GenerateOutputMenu();
     }
 
     private void GenerateOutputMenu()
     {
-        foreach (Part part in partsSO.parts)
+        foreach (Part part in partLoader.parts)
         {
             OutputMenuItem outputMenuItem = Instantiate(outputMenuItemPrefab, outputMenuItemContainer);
             outputMenuItem.SetPart(part);

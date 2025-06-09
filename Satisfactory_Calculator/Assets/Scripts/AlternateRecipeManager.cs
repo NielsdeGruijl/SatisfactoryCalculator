@@ -10,9 +10,7 @@ public class AlternateRecipeManager : MonoBehaviour
     [SerializeField] private Transform activeRecipeContainer;
     [SerializeField] private AlternateRecipeButton recipeButtonPrefab;
     
-    public AlternateRecipesSO alternateRecipesSO;
-
-    public PartListSO partsListSO;
+    private AlternateRecipeLoader recipeLoader;
     
     public List<PartRecipe> alternateRecipes;
     private List<PartRecipe> activeRecipes;
@@ -20,27 +18,26 @@ public class AlternateRecipeManager : MonoBehaviour
 
     private List<AlternateRecipeButton> generatedRecipeButtons;
     
-    private RecipeCalculator calculator;
     private WorldRecipeCalculator worldCalculator;
+    private PartLoader partLoader;
 
     private void Start()
     {
-        calculator = GetComponent<RecipeCalculator>();
         worldCalculator = GetComponent<WorldRecipeCalculator>();
+        partLoader = GetComponent<PartLoader>();
+        recipeLoader = GetComponent<AlternateRecipeLoader>();
 
-        //alternateRecipesSO.alternateRecipes = new List<PartRecipe>(alternateRecipes);
-        
         alternateRecipeMenu.SetActive(false);
         
         generatedRecipeButtons = new List<AlternateRecipeButton>();
         
-        foreach (Part part in partsListSO.parts)
+        foreach (Part part in partLoader.parts)
         {
             part.activeRecipe = part.defaultRecipe;
         }
         
         activeRecipes = new List<PartRecipe>();
-        availableRecipes = new List<PartRecipe>(alternateRecipesSO.alternateRecipes);
+        availableRecipes = new List<PartRecipe>(recipeLoader.recipes);
         
         GenerateRecipeButtons();
     }

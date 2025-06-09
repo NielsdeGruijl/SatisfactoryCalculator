@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
+  m_Name: Bolted Frame
+  m_EditorClassIdentifier: 
+  recipe:
+    name: Bolted Frame
+    part: {fileID: 11400000, guid: 0a6be7ce1fa7b3620b97b54a2fc24ac8, type: 2}
+    productionIcon: {fileID: 21300000, guid: f7dbad475561122058b42e7843917d9e, type: 3}
+    productionPerMinute: 5
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: e681c159d947140a296d182ddce06ba4, type: 2}
+      amount: 28
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: b1c6f6f2a58e324319ddbc11bcc82eb7, type: 2}
+      amount: 1.5
+      productionNode: {fileID: 0}
+    materialIngredients: []

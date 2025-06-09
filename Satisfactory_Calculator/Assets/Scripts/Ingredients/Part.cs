@@ -10,4 +10,5 @@ public class Part : ScriptableObject
     
     public PartRecipe defaultRecipe;
     public PartRecipe activeRecipe;
+    
 }
