@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
-  m_Name: Pure Iron Ingot
+  m_Name: Turbo Heavy Fuel
   m_EditorClassIdentifier: 
   recipe:
-    name: Pure Iron Ingot
-    part: {fileID: 11400000, guid: 974d31ad2aaee2cd092ed4cb5d04509e, type: 2}
+    name: Turbo Heavy Fuel
+    part: {fileID: 11400000, guid: 0029cfe210e7d4f9685eefa4616d8908, type: 2}
     productionIcon: {fileID: 21300000, guid: 1b0383a7e1d662996b27c15d9fb63a1c, type: 3}
-    productionPerMinute: 65
+    productionPerMinute: 30
     active: 0
-    partIngredients: []
+    partIngredients:
+    - part: {fileID: 11400000, guid: 000c71fb8a76777ca937b628f018e11d, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
     materialIngredients:
-    - material: {fileID: 11400000, guid: 670f2a74acfbafc63b3690fd71c6c311, type: 2}
-      amount: 0.5385
-    - material: {fileID: 11400000, guid: 8ffce09876ba67836b12e0b6b156b342, type: 2}
-      amount: 0.3077
+    - material: {fileID: 11400000, guid: 3cee48c1718d8874b937e8eb8c92f228, type: 2}
+      amount: 1.25

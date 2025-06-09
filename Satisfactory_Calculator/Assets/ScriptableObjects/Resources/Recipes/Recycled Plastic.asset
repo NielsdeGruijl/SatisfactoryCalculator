@@ -10,17 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
-  m_Name: Pure Iron Ingot
+  m_Name: Recycled Plastic
   m_EditorClassIdentifier: 
   recipe:
-    name: Pure Iron Ingot
-    part: {fileID: 11400000, guid: 974d31ad2aaee2cd092ed4cb5d04509e, type: 2}
+    name: Recycled Plastic
+    part: {fileID: 11400000, guid: 4d79c305448d5107aa8ea41afa8b4fd9, type: 2}
     productionIcon: {fileID: 21300000, guid: 1b0383a7e1d662996b27c15d9fb63a1c, type: 3}
-    productionPerMinute: 65
+    productionPerMinute: 60
     active: 0
-    partIngredients: []
-    materialIngredients:
-    - material: {fileID: 11400000, guid: 670f2a74acfbafc63b3690fd71c6c311, type: 2}
-      amount: 0.5385
-    - material: {fileID: 11400000, guid: 8ffce09876ba67836b12e0b6b156b342, type: 2}
-      amount: 0.3077
+    partIngredients:
+    - part: {fileID: 11400000, guid: 47355801b409af68e90c1b97cacebe33, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 8602898ddc44e922790ba7e0a50c5d66, type: 2}
+      amount: 0.5
+      productionNode: {fileID: 0}
+    materialIngredients: []

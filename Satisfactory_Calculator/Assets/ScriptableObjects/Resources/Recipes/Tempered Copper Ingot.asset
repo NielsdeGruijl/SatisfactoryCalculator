@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
-  m_Name: Pure Copper Ingot
+  m_Name: Tempered Copper Ingot
   m_EditorClassIdentifier: 
   recipe:
-    name: Pure Copper Ingot
+    name: Tempered Copper Ingot
     part: {fileID: 11400000, guid: 945108f6a38238cc89941ca57499079a, type: 2}
-    productionIcon: {fileID: 21300000, guid: 1b0383a7e1d662996b27c15d9fb63a1c, type: 3}
-    productionPerMinute: 37.5
+    productionIcon: {fileID: 21300000, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
+    productionPerMinute: 60
     active: 0
-    partIngredients: []
+    partIngredients:
+    - part: {fileID: 11400000, guid: 9d098e26e69d06d2ea75d4a5ed637e84, type: 2}
+      amount: 0.6667
+      productionNode: {fileID: 0}
     materialIngredients:
     - material: {fileID: 11400000, guid: d092e1695888046a3bbac8f0910bd11b, type: 2}
-      amount: 0.4
-    - material: {fileID: 11400000, guid: 8ffce09876ba67836b12e0b6b156b342, type: 2}
-      amount: 0.2667
+      amount: 0.4167
