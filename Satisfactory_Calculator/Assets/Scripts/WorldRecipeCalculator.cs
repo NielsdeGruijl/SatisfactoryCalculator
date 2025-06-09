@@ -160,8 +160,8 @@ public class WorldRecipeCalculator : MonoBehaviour
                 
                 foreach (MaterialIngredient ingredient in currentPart.activeRecipe.materialIngredients)
                 {
-                    if(!inputMaterials.TryAdd(ingredient.material, ingredient.amount * amountToCraft))
-                        inputMaterials[ingredient.material] += ingredient.amount * amountToCraft;
+                    if(!inputMaterials.TryAdd(ingredient.material, ingredient.amount * currentAmountToCraft))
+                        inputMaterials[ingredient.material] += ingredient.amount * currentAmountToCraft;
                 }
             }
             

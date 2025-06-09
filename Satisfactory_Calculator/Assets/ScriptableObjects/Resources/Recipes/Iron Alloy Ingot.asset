@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Iron Alloy Ingot
   m_EditorClassIdentifier: 
   recipe:
-    name: Insulated Crystal Oscillator
-    part: {fileID: 11400000, guid: 8d611c2c83fdb692dad82bfd0a622aa9, type: 2}
+    name: Iron Ally Ingot
+    part: {fileID: 11400000, guid: 974d31ad2aaee2cd092ed4cb5d04509e, type: 2}
     productionIcon: {fileID: 21300000, guid: 8825d4a6a9f3aa925b0f6b6201cd8e29, type: 3}
     productionPerMinute: 75
     active: 0

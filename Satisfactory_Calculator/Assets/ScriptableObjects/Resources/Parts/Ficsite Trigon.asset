@@ -10,29 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
-  m_Name: Dark Matter Residue
+  m_Name: Ficsite Trigon
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 22127c44a5f4360e6813a64ac079d538, type: 3}
+  icon: {fileID: 21300000, guid: c620fe95966ebe9afb3e34efc64a4809, type: 3}
   tier: 9
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 193652166060734674, guid: fb77ab30f4a0f48178892fa84323bcf3, type: 3}
-    productionPerMinute: 100
+    productionIcon: {fileID: 21300000, guid: 430774847d45ed24aa387f7d95e38b68, type: 3}
+    productionPerMinute: 30
     active: 0
     partIngredients:
-    - part: {fileID: 11400000, guid: 0cb957910e3656375806f819b0a33bc8, type: 2}
-      amount: 0.5
+    - part: {fileID: 11400000, guid: 1bf368f6e1cf26b4795a14340491a7ec, type: 2}
+      amount: 0.3333
       productionNode: {fileID: 0}
     materialIngredients: []
   activeRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 193652166060734674, guid: fb77ab30f4a0f48178892fa84323bcf3, type: 3}
+    productionIcon: {fileID: 0}
     productionPerMinute: 0
     active: 0
-    partIngredients:
-    - part: {fileID: 11400000, guid: 0cb957910e3656375806f819b0a33bc8, type: 2}
-      amount: 0.5
-      productionNode: {fileID: 0}
+    partIngredients: []
     materialIngredients: []

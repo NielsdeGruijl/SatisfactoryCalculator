@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Neural-Quantum Processor
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: e8a743a23dc6f1757a3d5e02b83a4249, type: 3}
+  tier: 9
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: 63e05c3ba2ff3388d8dc890faba9ccdf, type: 3}
+    productionPerMinute: 3
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 972fa46ce4db44c9b8709d8e0d02c6d6, type: 2}
+      amount: 5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 954eb3efefef51b0abba34dbf690245e, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: c3dcf9519a98c28c08cc2a38e9282784, type: 2}
+      amount: 15
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: e9c521ce386474594b791f95e9bb7da7, type: 2}
+      amount: 25
+      productionNode: {fileID: 0}
+    materialIngredients: []
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []

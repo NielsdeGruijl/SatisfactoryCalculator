@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
+  m_Name: Alien Power Matrix
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 5f6a4aadba6d64aa6a361f0db90d60da, type: 3}
+  tier: 9
+  defaultRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 21300000, guid: 63e05c3ba2ff3388d8dc890faba9ccdf, type: 3}
+    productionPerMinute: 2.5
+    active: 0
+    partIngredients:
+    - part: {fileID: 11400000, guid: 4c611b7a94e64b934ae43ec222afae8e, type: 2}
+      amount: 5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 9395ccf0679789ba2af5c299366e0c70, type: 2}
+      amount: 3
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: e9c521ce386474594b791f95e9bb7da7, type: 2}
+      amount: 24
+      productionNode: {fileID: 0}
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 94715cf9ecb6776d7be2488d8e9af83c, type: 2}
+      amount: 3
+  activeRecipe:
+    name: 
+    part: {fileID: 0}
+    productionIcon: {fileID: 0}
+    productionPerMinute: 0
+    active: 0
+    partIngredients: []
+    materialIngredients: []

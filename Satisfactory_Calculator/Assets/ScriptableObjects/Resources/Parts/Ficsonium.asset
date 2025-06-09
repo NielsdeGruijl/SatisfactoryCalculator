@@ -10,29 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
-  m_Name: Dark Matter Residue
+  m_Name: Ficsonium
   m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 22127c44a5f4360e6813a64ac079d538, type: 3}
+  icon: {fileID: 21300000, guid: a3d5aea473a7fd20ab370794e2255b10, type: 3}
   tier: 9
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 193652166060734674, guid: fb77ab30f4a0f48178892fa84323bcf3, type: 3}
-    productionPerMinute: 100
+    productionIcon: {fileID: 21300000, guid: e827f9b6366b95773a05b7bc0c2339cf, type: 3}
+    productionPerMinute: 10
     active: 0
     partIngredients:
-    - part: {fileID: 11400000, guid: 0cb957910e3656375806f819b0a33bc8, type: 2}
-      amount: 0.5
+    - part: {fileID: 11400000, guid: 88abd7f2088467bb5aa5062ad99d9c8b, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 6b53dc806d0a1a3a8b408b44ff8b2c05, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 72befa633f05ff4f895c172a490238f0, type: 2}
+      amount: 20
       productionNode: {fileID: 0}
     materialIngredients: []
   activeRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 193652166060734674, guid: fb77ab30f4a0f48178892fa84323bcf3, type: 3}
+    productionIcon: {fileID: 0}
     productionPerMinute: 0
     active: 0
-    partIngredients:
-    - part: {fileID: 11400000, guid: 0cb957910e3656375806f819b0a33bc8, type: 2}
-      amount: 0.5
-      productionNode: {fileID: 0}
+    partIngredients: []
     materialIngredients: []
