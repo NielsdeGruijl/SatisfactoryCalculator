@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1cbe106dd7d41f5295f599ee73ee5c5, type: 3}
-  m_Name: Dark Matter Crystallization
+  m_Name: Residual Rubber
   m_EditorClassIdentifier: 
   recipe:
-    name: Dark Matter Crystallization
-    part: {fileID: 11400000, guid: 2a5a54d75f0230c598a501446929f9b5, type: 2}
-    productionIcon: {fileID: 21300000, guid: e827f9b6366b95773a05b7bc0c2339cf, type: 3}
+    name: Residual Rubber
+    part: {fileID: 11400000, guid: 47355801b409af68e90c1b97cacebe33, type: 2}
+    productionIcon: {fileID: 21300000, guid: 1b0383a7e1d662996b27c15d9fb63a1c, type: 3}
     productionPerMinute: 20
     active: 0
     partIngredients: []
     materialIngredients:
-    - material: {fileID: 11400000, guid: 1613e7c805ff48d7ba0ab9cdea989bf5, type: 2}
-      amount: 10
+    - material: {fileID: 11400000, guid: ab4b8a959ad1b77c2b2f8f42328ccdde, type: 2}
+      amount: 2
+    - material: {fileID: 11400000, guid: 8ffce09876ba67836b12e0b6b156b342, type: 2}
+      amount: 2

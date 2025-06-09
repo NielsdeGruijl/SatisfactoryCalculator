@@ -12,15 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Ballistic Warp Drive
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  tier: 0
+  icon: {fileID: 21300000, guid: 85e8079483f7316278213c049d386aa9, type: 3}
+  tier: 9
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 0}
-    productionPerMinute: 0
+    productionIcon: {fileID: 21300000, guid: 850e9a086692a5b16ab09595f3131282, type: 3}
+    productionPerMinute: 1
     active: 0
-    partIngredients: []
+    partIngredients:
+    - part: {fileID: 11400000, guid: db62662d6a9876811a7ea72096926c45, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 6b53dc806d0a1a3a8b408b44ff8b2c05, type: 2}
+      amount: 5
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 9395ccf0679789ba2af5c299366e0c70, type: 2}
+      amount: 2
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 2a5a54d75f0230c598a501446929f9b5, type: 2}
+      amount: 40
+      productionNode: {fileID: 0}
     materialIngredients: []
   activeRecipe:
     name: 

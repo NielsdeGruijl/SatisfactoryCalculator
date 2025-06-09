@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl))
         {
             camera.orthographicSize -= Input.GetAxis("Mouse ScrollWheel") * 10;
-            camera.orthographicSize = Mathf.Clamp(camera.orthographicSize, 1, 10);
+            camera.orthographicSize = Mathf.Clamp(camera.orthographicSize, 1, 20);
         }
     }
 
@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-0.01f * camera.orthographicSize);
-                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5, 20), Mathf.Clamp(transform.position.y, -50, 50), transform.position.z);
+                transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5, 20), Mathf.Clamp(transform.position.y, -120, 120), transform.position.z);
             }
         }
     }

@@ -631,7 +631,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &968703898
@@ -992,6 +992,7 @@ MonoBehaviour:
   productionTree: {fileID: 968703897}
   baseProductionNode: {fileID: 5111856903474100732}
   productionNodePrefab: {fileID: 5743861452457834839, guid: 4e439190af1a55c388cb602512c26301, type: 3}
+  materialNodePrefab: {fileID: -3495164858435210215, guid: 7052fd71abbd8d1198fbb065c48e7306, type: 3}
   lineDrawerPrefab: {fileID: 4208522112190448596, guid: ef21c851a9f672522a88faff8c2f2cd0, type: 3}
   inputContainer: {fileID: 1592598844}
   inputItemPrefab: {fileID: 2680417402840206901, guid: 0544b70b18f1a134dbbcc1f78b4f9311, type: 3}

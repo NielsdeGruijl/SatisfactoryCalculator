@@ -12,16 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: Biochemical Sculptor
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  tier: 0
+  icon: {fileID: 21300000, guid: 54f5f6c5e7bec1e50bc3ff90345d4d2f, type: 3}
+  tier: 9
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 0}
-    productionPerMinute: 0
+    productionIcon: {fileID: 21300000, guid: 06b014b992a7b1f2b85fd26fea20a39e, type: 3}
+    productionPerMinute: 2
     active: 0
-    partIngredients: []
-    materialIngredients: []
+    partIngredients:
+    - part: {fileID: 11400000, guid: ae57f206930900e3895bd953febf8535, type: 2}
+      amount: 0.25
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: c3dcf9519a98c28c08cc2a38e9282784, type: 2}
+      amount: 20
+      productionNode: {fileID: 0}
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 8ffce09876ba67836b12e0b6b156b342, type: 2}
+      amount: 5
   activeRecipe:
     name: 
     part: {fileID: 0}

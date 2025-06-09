@@ -12,15 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4e1690e20b826c6ba7c01e67dfb226, type: 3}
   m_Name: AI Expansion Server
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  tier: 0
+  icon: {fileID: 21300000, guid: 85150a0dab4292622afcfc810e6288b9, type: 3}
+  tier: 9
   defaultRecipe:
     name: 
     part: {fileID: 0}
-    productionIcon: {fileID: 0}
-    productionPerMinute: 0
+    productionIcon: {fileID: 21300000, guid: 63e05c3ba2ff3388d8dc890faba9ccdf, type: 3}
+    productionPerMinute: 4
     active: 0
-    partIngredients: []
+    partIngredients:
+    - part: {fileID: 11400000, guid: 7bc7d0c728521f99a9cd946fc4cf76e1, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: eb097483e561fd4dead9e7d2257c0f2e, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: 9395ccf0679789ba2af5c299366e0c70, type: 2}
+      amount: 1
+      productionNode: {fileID: 0}
+    - part: {fileID: 11400000, guid: e9c521ce386474594b791f95e9bb7da7, type: 2}
+      amount: 25
+      productionNode: {fileID: 0}
     materialIngredients: []
   activeRecipe:
     name: 

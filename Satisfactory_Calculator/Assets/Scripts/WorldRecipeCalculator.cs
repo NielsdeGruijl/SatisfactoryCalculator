@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,7 @@ public class WorldRecipeCalculator : MonoBehaviour
     [SerializeField] private Transform productionTree;
     [SerializeField] private ProductionNode baseProductionNode;
     [SerializeField] private ProductionNode productionNodePrefab;
+    [SerializeField] private MaterialNode materialNodePrefab;
     [SerializeField] private LineDrawer lineDrawerPrefab;
 
     [Header("Input List")] 
@@ -72,21 +74,34 @@ public class WorldRecipeCalculator : MonoBehaviour
                 inputMaterials[ingredient.material] += ingredient.amount * amountToCraft;
         }
 
+        for (int i = inputMaterials.Count; i > 0; i--)
+        {
+            int index = i - 1;
+            CostItem inputMaterialObject = Instantiate(inputItemPrefab, inputContainer);
+            inputMaterialObject.icon.sprite = inputMaterials.ElementAt(index).Key.icon;
+            inputMaterialObject.amountText.text = inputMaterials.ElementAt(index).Value.ToString("0.0");
+            inputs.Add(inputMaterialObject.gameObject);
+        }
+        
+        for (int i = inputParts.Count; i > 0; i--)
+        {
+            int index = i - 1;
+            CostItem inputPartObject = Instantiate(inputItemPrefab, inputContainer);
+            inputPartObject.icon.sprite =  inputParts.ElementAt(index).Key.icon;
+            inputPartObject.amountText.text = inputParts.ElementAt(index).Value.ToString("0.0");
+            inputs.Add(inputPartObject.gameObject);
+        }
+        
+        /*
         foreach (KeyValuePair<Part, float> pair in inputParts)
         {
-            CostItem inputPartObject = Instantiate(inputItemPrefab, inputContainer);
-            inputPartObject.icon.sprite =  pair.Key.icon;
-            inputPartObject.amountText.text = pair.Value.ToString("0.0");
-            inputs.Add(inputPartObject.gameObject);
+
         }
         
         foreach (KeyValuePair<Material, float> pair in inputMaterials)
         {
-            CostItem inputMaterialObject = Instantiate(inputItemPrefab, inputContainer);
-            inputMaterialObject.icon.sprite = pair.Key.icon;
-            inputMaterialObject.amountText.text = pair.Value.ToString("0.0");
-            inputs.Add(inputMaterialObject.gameObject);
-        }
+
+        }*/
     }
     
     private void GenerateBranch(PartIngredient baseIngredient)
@@ -133,7 +148,7 @@ public class WorldRecipeCalculator : MonoBehaviour
                         inputParts[ingredient.part] += ingredient.amount * currentAmountToCraft;
                     
                     Transform nodeContainer = null;
-                    if (currentPart.activeRecipe.partIngredients.Count > 1)
+                    if (currentPart.activeRecipe.partIngredients.Count + currentPart.activeRecipe.materialIngredients.Count > 1)
                     {
                         if (tierContainer == null)
                         {
@@ -162,6 +177,56 @@ public class WorldRecipeCalculator : MonoBehaviour
                 {
                     if(!inputMaterials.TryAdd(ingredient.material, ingredient.amount * currentAmountToCraft))
                         inputMaterials[ingredient.material] += ingredient.amount * currentAmountToCraft;
+
+                    MaterialNode node;
+                    Transform nodeContainer = null;
+                    if (tierContainer != null)
+                    {
+                        nodeContainer = Instantiate(horizontalContainer, tierContainer);
+                        node = Instantiate(materialNodePrefab, nodeContainer);
+                    }
+                    else
+                    {
+                        if (currentPart.activeRecipe.partIngredients.Count + currentPart.activeRecipe.materialIngredients.Count > 1)
+                        {
+                            tierContainer = Instantiate(verticalContainer, currentProductionNode.parent);
+                            nodeContainer = Instantiate(horizontalContainer, tierContainer);
+                            
+                            node = Instantiate(materialNodePrefab, nodeContainer);
+                        }
+                        else
+                        {
+                            node = Instantiate(materialNodePrefab, currentProductionNode.parent);
+                        }
+                    }
+                    
+                    /*if (currentPart.activeRecipe.partIngredients.Count + currentPart.activeRecipe.materialIngredients.Count > 1)
+                    {
+                        if (tierContainer == null)
+                        {
+                            tierContainer = Instantiate(verticalContainer, currentProductionNode.parent);
+                            nodeContainer = Instantiate(horizontalContainer, tierContainer);
+                        }
+                        else if (tierContainer != null)
+                        {
+                            nodeContainer = Instantiate(horizontalContainer, tierContainer);
+                        }
+                        else
+                        {
+                            nodeContainer = Instantiate(verticalContainer, currentProductionNode.parent);
+                        }
+                        
+                        node = Instantiate(materialNodePrefab, nodeContainer);
+                    }
+                    else
+                    {
+                    }*/
+                    
+                    node.material = ingredient.material;
+                    node.amount.text = (ingredient.amount * currentAmountToCraft).ToString("0.0");
+                    node.icon.sprite = ingredient.material.icon;
+                    
+                    CreateLineDrawer(node.GetComponent<RectTransform>(), currentProductionNode.GetComponent<RectTransform>());
                 }
             }
             
@@ -200,7 +265,7 @@ public class WorldRecipeCalculator : MonoBehaviour
         productionNode.part = part;
         productionNode.icon.sprite = part.activeRecipe.productionIcon;
         productionNode.partIcon.sprite = part.icon;
-        productionNode.productionPerMinute.text = part.activeRecipe.productionPerMinute + " per min";
+        productionNode.productionPerMinute.text = part.activeRecipe.productionPerMinute + " p/m";
         productionNode.quantity.text = (amount / part.activeRecipe.productionPerMinute).ToString("0.00") + "x";
     }    
     

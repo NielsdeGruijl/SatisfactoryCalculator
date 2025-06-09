@@ -24,10 +24,9 @@ MonoBehaviour:
     - part: {fileID: 11400000, guid: 58449ae7cfd0b36d8922a91a6a16d0b6, type: 2}
       amount: 1
       productionNode: {fileID: 0}
-    - part: {fileID: 11400000, guid: 72befa633f05ff4f895c172a490238f0, type: 2}
+    materialIngredients:
+    - material: {fileID: 11400000, guid: 1613e7c805ff48d7ba0ab9cdea989bf5, type: 2}
       amount: 5
-      productionNode: {fileID: 0}
-    materialIngredients: []
   activeRecipe:
     name: 
     part: {fileID: 0}
