@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class WorldRecipeCalculator : MonoBehaviour
 {
+    public TabManager tabManager;
     [SerializeField] private Part outputPart;
     [SerializeField] private Transform container;
     
@@ -52,6 +53,8 @@ public class WorldRecipeCalculator : MonoBehaviour
         amountInputField.text = "1";
         outputImage.sprite = outputPart.icon;
         outputName.text = outputPart.name;
+        
+        tabManager?.ChangeTabUIInfo(this, outputPart);
     }
     
     public void GenerateTree()

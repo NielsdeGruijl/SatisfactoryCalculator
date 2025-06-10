@@ -39,9 +39,9 @@ public class CameraController : MonoBehaviour
     private void MoveCamera()
     {
 #if UNITY_EDITOR
-        transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-1 * camera.orthographicSize * Time.deltaTime);
+        transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-1 * camera.orthographicSize * Time.deltaTime * Settings.cameraSensitivity);
 #else
-                transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-1 * camera.orthographicSize * Time.deltaTime * 10);
+        transform.position += new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * (-1 * camera.orthographicSize * Time.deltaTime * 10 * Settings.cameraSensitivity);
 #endif
                 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, -5, 20), Mathf.Clamp(transform.position.y, -120, 120), transform.position.z);
