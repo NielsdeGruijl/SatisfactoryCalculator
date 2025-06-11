@@ -16,12 +16,17 @@ public class Settings : MonoBehaviour
 
     private Resolution[] resolutions;
     private List<Resolution> filteredResolutions = new List<Resolution>();
+
+    private RefreshRate refreshRate;
     
     private void Start()
     {
+        refreshRate = Screen.currentResolution.refreshRateRatio;
         //Screen.fullScreen = true;
         settingsMenu.SetActive(false);
 
+        fullscreenToggle.isOn = Screen.fullScreen;
+        
         resolutions = Screen.resolutions;
         Screen.SetResolution(2560, 1440, true);
         SetResolutionsDropDown();

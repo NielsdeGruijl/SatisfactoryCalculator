@@ -20,6 +20,6 @@ MonoBehaviour:
     active: 0
     partIngredients:
     - part: {fileID: 11400000, guid: 974d31ad2aaee2cd092ed4cb5d04509e, type: 2}
-      amount: 12.5
+      amount: 0.25
       productionNode: {fileID: 0}
     materialIngredients: []

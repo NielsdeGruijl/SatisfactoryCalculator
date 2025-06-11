@@ -50,7 +50,7 @@ public class WorldRecipeCalculator : MonoBehaviour
     private void SetOutputPart(Part part)
     {
         outputPart = part;
-        amountInputField.text = "1";
+        amountInputField.text = amountToCraft.ToString();
         outputImage.sprite = outputPart.icon;
         outputName.text = outputPart.name;
         
@@ -126,7 +126,7 @@ public class WorldRecipeCalculator : MonoBehaviour
         CreateLineDrawer(branchBaseNode.GetComponent<RectTransform>(), baseProductionNode.GetComponent<RectTransform>());
 
         Dictionary<ProductionNode, float> baseTier = new Dictionary<ProductionNode, float>();
-        baseTier.Add(branchBaseNode, amountToCraft);
+        baseTier.Add(branchBaseNode, baseIngredient.amount * amountToCraft);
         tiers.Add(baseTier);
         
         while (tiers.Count > 0)
@@ -138,6 +138,8 @@ public class WorldRecipeCalculator : MonoBehaviour
                 ProductionNode currentProductionNode = pair.Key;
                 Part currentPart = currentProductionNode.part;
                 float currentAmountToCraft = pair.Value;
+
+                //Debug.Log("Base: " + currentPart.name + ", " + currentAmountToCraft);
 
                 Transform tierContainer = null;
                 
@@ -168,6 +170,7 @@ public class WorldRecipeCalculator : MonoBehaviour
                     }
                     
                     CreateProductionNode(newProductionNode, ingredient.part, ingredient.amount * currentAmountToCraft);
+                    
                     
                     CreateLineDrawer(newProductionNode.GetComponent<RectTransform>(), currentProductionNode.GetComponent<RectTransform>());
                     
@@ -200,28 +203,6 @@ public class WorldRecipeCalculator : MonoBehaviour
                             node = Instantiate(materialNodePrefab, currentProductionNode.parent);
                         }
                     }
-                    
-                    /*if (currentPart.activeRecipe.partIngredients.Count + currentPart.activeRecipe.materialIngredients.Count > 1)
-                    {
-                        if (tierContainer == null)
-                        {
-                            tierContainer = Instantiate(verticalContainer, currentProductionNode.parent);
-                            nodeContainer = Instantiate(horizontalContainer, tierContainer);
-                        }
-                        else if (tierContainer != null)
-                        {
-                            nodeContainer = Instantiate(horizontalContainer, tierContainer);
-                        }
-                        else
-                        {
-                            nodeContainer = Instantiate(verticalContainer, currentProductionNode.parent);
-                        }
-                        
-                        node = Instantiate(materialNodePrefab, nodeContainer);
-                    }
-                    else
-                    {
-                    }*/
                     
                     node.material = ingredient.material;
                     node.amount.text = (ingredient.amount * currentAmountToCraft).ToString("0.0");
@@ -263,6 +244,8 @@ public class WorldRecipeCalculator : MonoBehaviour
 
     private void CreateProductionNode(ProductionNode productionNode, Part part, float amount)
     {
+        Debug.Log(part.name + ", " + amount);
+        
         productionNode.part = part;
         productionNode.icon.sprite = part.activeRecipe.productionIcon;
         productionNode.partIcon.sprite = part.icon;
