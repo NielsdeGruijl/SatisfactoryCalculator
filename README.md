@@ -12,3 +12,6 @@ A new factory plan can easily be created without losing your other plan by creat
 
 This calculator can handle even the largest recipes in the game.
 <img src="https://github.com/NielsdeGruijl/SatisfactoryCalculator/blob/main/ReadMeAssets/BallisticWarpDriveShowcase.gif"/>
+
+Toggling alternate recipes will update the recipe in real time.
+<img src="https://github.com/NielsdeGruijl/SatisfactoryCalculator/blob/main/ReadMeAssets/AlternatesShowcase.gif"/>
