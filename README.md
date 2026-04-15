@@ -27,4 +27,4 @@ If I ever were to return to this project, however, there would be two main impro
 - Save data between sessions so you don't have to redo your plans every time you boot up the calculator.
 
 <br/> <br/>
-All of the item images in the project were taken from [](https://satisfactory.wiki.gg/)
+All of the item images in the project were taken from [satisfactory.wiki.gg](https://satisfactory.wiki.gg/)
