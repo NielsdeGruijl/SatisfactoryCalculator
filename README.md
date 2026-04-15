@@ -1,5 +1,5 @@
 # Satisfactory calculator
-Satisfactory calculator is a desktop app I developed to help me plan out factories in the game <a alt="Satisfactory" href="https://www.satisfactorygame.com/"></a>.
+Satisfactory calculator is a desktop app I developed to help me plan out factories in the game [Satisfactory](https://www.satisfactorygame.com/).
 I developed this project purely for fun in my spare time using Unity 6.
 
 ## Features
