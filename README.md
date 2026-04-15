@@ -21,7 +21,7 @@ The factory plan updates in real-time as alternates are selected and de-selected
 <img src="https://github.com/NielsdeGruijl/SatisfactoryCalculator/blob/main/ReadMeAssets/AlternatesShowcase.gif"/>
 
 ## Improvements
-I am pretty happy how this turned out for a fun little side-project.
-If I ever were to return to this project, there would be two main improvements I'd add:
+I am pretty happy how this turned out for a fun little side-project. <br/>
+If I ever were to return to this project, however, there would be two main improvements I'd add:
 - Add a search bar when selecting recipes, especially for the alternate recipes.
 - Save data between sessions so you don't have to redo your plans every time you boot up the calculator.
