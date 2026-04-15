@@ -7,11 +7,12 @@ Full disclosure: I added every recipe to the project as a ScriptableObject, by h
 Selecting an output in the bottom right will generate a tree-like structure showing which machines are necessary to go from base materials to desired product. <br/>
 <img src="https://github.com/NielsdeGruijl/SatisfactoryCalculator/blob/main/ReadMeAssets/RotorShowcase.gif"/>
 
-A new factory plan can easily be created without losing your other plan by creating a new tab.
+The tabs feature allows for planning out multiple factories simultaneously without losing progress.
 <img src="https://github.com/NielsdeGruijl/SatisfactoryCalculator/blob/main/ReadMeAssets/FusedModularFrameShowcase.gif"/>
 
-This calculator can handle even the largest recipes in the game.
+Even the largest recipes in the game can be planned out using this tool.
 <img src="https://github.com/NielsdeGruijl/SatisfactoryCalculator/blob/main/ReadMeAssets/BallisticWarpDriveShowcase.gif"/>
 
-Toggling alternate recipes will update the recipe in real time.
+Satisfactory has 'alternate' recipes that alter the way certain items are crafted. In the calculator, alternate recipes can be toggled from the button in the bottom left.
+The factory plan updates in real-time as alternates are selected and de-selected.
 <img src="https://github.com/NielsdeGruijl/SatisfactoryCalculator/blob/main/ReadMeAssets/AlternatesShowcase.gif"/>
