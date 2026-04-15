@@ -25,3 +25,6 @@ I am pretty happy how this turned out for a fun little side-project. <br/>
 If I ever were to return to this project, however, there would be two main improvements I'd add:
 - Add a search bar when selecting recipes, especially for the alternate recipes.
 - Save data between sessions so you don't have to redo your plans every time you boot up the calculator.
+
+<br/> <br/>
+All of the item images in the project were taken from [](Satisfactory.wiki.gg)
